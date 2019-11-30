@@ -1,0 +1,52 @@
+body {
+    margin: 0px
+}
+
+#brand {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  color: white;
+  padding: 10px
+}
+
+h1 {
+    margin-left: 10px;
+    font-size: 32px
+}
+
+p {
+    margin-left: 10px
+}
+
+.inline {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-left: 10px
+}
+
+h3 {
+    margin-left: 10px
+}
+
+#sectionSemantic {
+    visibility: hidden;
+    position: absolute;
+    top: 300px;
+}
+
+#articleSemantic {
+    visibility: hidden;
+    position: absolute;
+    top: 300px;
+}
+
+#headerSemantic {
+    visibility: hidden;
+    position: absolute;
+    top: 300px;
+}
