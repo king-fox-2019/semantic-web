@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $('#section').click(function(event){
+        event.preventDefault()
+        $('div:not(#sectionSemantic)').css('visibility','hidden')
+        $('#sectionSemantic').css('visibility','visible')
+    })
+    $('#article').click(function(event){
+        event.preventDefault()
+        $('div:not(#articleSemantic)').css('visibility','hidden')
+        $('#articleSemantic').css('visibility','visible')
+    })
+    $('#header').click(function(event){
+        $('div:not(#headerSemantic)').css('visibility','hidden')
+        $('#headerSemantic').css('visibility','visible')
+    })
+})
