@@ -1,0 +1,60 @@
+/*-ABOUT PAGE-*/
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: initial;
+    
+}
+
+body, html {
+    box-sizing: initial;
+    width: 100%;
+
+}
+
+/*-- about background --*/
+#about {
+    width: 100%;
+    height: 100%;
+    
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    background-image: url(https://i.ytimg.com/vi/CNyVnC9qT1Q/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    background-attachment: fixed;
+
+    
+}   
+
+.avatar img{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    right: 0px:
+    z-index: 1;
+    border-radius: 30px;
+    
+}
+
+.about p{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin: 50px;
+    text-align: justify;
+    padding-block-end: 0in;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+
