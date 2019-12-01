@@ -1,0 +1,73 @@
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+.input-box{
+    /* border: 2px solid red   ;     */
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 40px;
+    font-size: 15px;
+    float: left;
+    
+}
+
+
+
+.price-quantity{
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+.pre-style{
+    text-align: left;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.submit-box{
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #4CAF50; 
+    border: 1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    object-position: center;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+
+
+
+
+img.satu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+    width: auto;
+    
+}
+
+
+
+.table-product-detail {
+    /* border: 2px solid red; */
+
+    width: 800px;
+}
+
+
+#notes1{
+    float: left;
+}

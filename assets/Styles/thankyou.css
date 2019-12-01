@@ -1,0 +1,17 @@
+
+
+
+.thankyou p{
+
+    text-align: center;
+    margin: 5% auto;
+
+}
+
+.foot-thankyou{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+}

@@ -1,0 +1,513 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    clear: both;
+}
+
+
+
+
+
+html, body{
+    font-family: 'Poppins', sans-serif; 
+    width: 100%;
+    
+    
+}
+
+
+
+
+
+
+
+.div-navbar {
+    
+    /* position: fixed; */
+    font-size: 10px;
+    color: white;
+    background-color: darkslateblue;
+    
+    /* border: 2px solid red; */
+    padding: 8px;
+    
+    height: 50px;
+    
+}
+  
+
+.div-navbar h1{
+    
+    color: lightblue;
+    display: inline;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 10px;
+    
+}
+
+.div-navbar a{
+    text-decoration: none;
+    
+}
+
+.div-navbar p{
+    display: inline;
+    
+}
+
+
+
+/* segment category  */
+.dropdown {
+    border: 1px solid black;
+    
+    position: relative ;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+
+    left: 20px;
+    bottom: 4px;
+    
+}
+
+
+.btn-category{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    color: white;
+    border: none;
+    
+    cursor:pointer;
+    font-size: auto;
+    overflow: hidden;
+    outline:none;
+    width: 100%;
+    margin-top: 6px;
+    
+
+    display: inline;
+    position: relative;
+ 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    background-color: #f1f1f1;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* width: 1000px; */
+    z-index: 1;
+    overflow: auto;
+}
+
+.dropdown-content a {
+    text-align: center;
+    color: black;
+    padding: 12px 0px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    width: 100%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 100%;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .btn-category {
+    background-color: #3e8e41;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* segment search bar */ 
+
+.div-search-bar{
+    display: inline-block;
+    position: absolute;
+
+    margin-left: 30px;
+    width: 500px;
+    /* border: 10px solid black; */
+    
+}
+
+
+.search-bar{
+    display: inline; 
+    position: absolute;
+    
+    width: 400px;
+    height: 26px;
+    
+    
+    padding-top: 3px;
+    left: 15px;
+    box-sizing: content-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    
+    font-size: 18px;
+    
+    white-space: pre;
+    overflow: hidden;
+    
+    
+}
+
+
+
+/* segment button search dan button cart  */ 
+.div-btn{
+    display: inline;
+    position: absolute;
+
+}
+    
+.icon-30{
+    height: 30px;
+    width: 30px;
+}
+
+
+#btn-search, #btn-cart{
+    background-color: Transparent;
+    display: inline;
+    position: absolute;
+    cursor:pointer  ;
+    outline:none;
+    
+}
+
+
+#btn-search{
+    /* margin-left: 10px; */
+    left: 455px;
+    
+
+}
+
+#btn-cart{
+    /* margin-left: 10px; */
+    left: 495px;
+}
+
+
+/* segment btn-register dan btn-login */
+#btn-register, #btn-login{
+    position: absolute;
+    
+    border: 2px solid darkgray;
+    border-radius: 9px;
+
+    padding: 8px 0;
+    width: 80px;
+
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#btn-register{
+    background-color: black;
+    color: lemonchiffon;
+    left: 550px;
+}
+
+#btn-login{    
+    color: white;
+    left: 640px;
+    
+}
+
+
+
+
+/* segment banner    */
+
+
+.div-banner{
+    
+    width: 100%; 
+    height: 350px;
+    /* border: 2px solid red; */
+    background-color: black;
+
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 2px;
+    
+}
+
+.banner-image{
+    margin: 0 auto;
+    /* width: 100%; */
+    height: auto;
+    
+    
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* segment promo    */
+
+.div-promo{
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+
+    width: 100%;
+    height: 400px;
+}
+
+
+.div-promo h2{
+    margin: 20px;
+    margin-left: 15px
+}
+
+.info-promo{
+    /* border: 2px solid teal; */
+
+    /* display: inline-block; */
+    position: relative  ;
+    
+    width: 1300px;
+    margin: 0 auto; 
+    
+    
+}
+
+
+.promo-image{
+    
+    height: 200px;
+    width: 24%;
+
+    margin: 0 4px;
+    border-radius: 12px;
+    object-fit: cover;
+    
+    cursor:pointer;
+}
+
+
+
+
+
+/* segment new-arrival    */
+
+.div-promo{
+    /* border: 2px solid red; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+
+    width: 100%;
+    height: 400px;
+}
+
+
+.div-promo h2{
+    margin: 20px;
+    margin-left: 15px
+}
+
+.info-promo{
+    /* border: 2px solid teal; */
+
+    /* display: inline-block; */
+    position: relative  ;
+    
+    width: fit-content;
+    margin: 0 auto; 
+
+    padding: ;
+    
+    
+}
+
+
+.promo-image{
+    
+    height: 150px;
+    width: 300px;
+
+    margin: 0 20px;
+    margin-top: 2px;
+    border-radius: 12px;
+    object-fit: cover;
+    
+    cursor:pointer;
+}
+
+
+
+
+/* segment table */
+
+
+table, td, th {  
+    border: 1px double darkgrey;
+    text-align: left;
+}
+  
+table {
+    /* border-collapse: collapse; 
+    width: 90%; */
+    table-layout: auto;
+    width: 70%;
+    
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    flex-wrap: wrap;
+  } -->
+
+
+table img{
+    width:200px;
+    height: auto;
+}
+
+
+
+
+
+/* segment why buy at us*/
+
+
+.div-why{
+    /* border: 2px solid red; */
+
+    border-top: 2px solid grey;
+    margin-top: 300px;
+
+
+}
+
+
+.div-why h2{
+    margin: 20px;
+    margin-left: 15px;
+    color: dimgrey;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+.table-why {
+    border: none;
+    table-layout: none;
+    width: 70%;
+    
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.t-why-td{
+    border: none;
+    padding: 8px;
+    text-align: center;
+    flex-wrap: wrap;
+  } 
+
+
+
+.why-image{
+    
+    width: 70px;
+    height: 65px;
+    
+}
+
+
+
+
+/* segment footer */
+
+footer{
+    
+    background-color: black;
+    color: whitesmoke;
+    
+    
+    
+}
+
+
+.table-footer {
+    border: none;
+    table-layout: none;
+    width: 70%;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ 
+}
+
+.t-footer-head{
+    margin-top: 1px;
+    border: none;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.t-footer-td{
+    border: none;
+    padding: 8px;
+
+    font-size: 12px;
+    text-align: center;
+    flex-wrap: wrap;
+  } 
+
+
+
+
+
+
