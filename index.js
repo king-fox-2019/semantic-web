@@ -12,7 +12,7 @@ function showHome() {
     $('#blog').hide()
     $('#head-content').show()
     $('#contact-box').hide()
-    $('#quotes-box').show(500)
+    $('#quotes-box').show(400)
     
 }
 
@@ -27,5 +27,5 @@ function showContact() {
     $('#blog').hide()
     $('#head-content').show()
     $('#quotes-box').hide()
-    $('#contact-box').fadeIn(500)
+    $('#contact-box').fadeIn(400)
 }
