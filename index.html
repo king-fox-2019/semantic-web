@@ -1,118 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <title>Resume</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Codystar%7CCovered+By+Your+Grace%7CDawning+of+a+New+Day%7CMontserrat%7CPlayfair+Display%7CPrata%7CRoboto&display=swap"
+        rel="stylesheet">
+    <title>Dusty Memories</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container my-5 p-5">
-        <div class="row">
-            <aside class="col-4">
-                <figure>
-                    <img src='./profile.jpeg' alt='Profile Picture'/>
-                </figure>
-                <h1 class="py-4">ANGELA VANESSA</h1>
-                <section  class="py-3">
-                    <h4>Bio</h4>
-                    <p>
-                        <span><b>D.O.B: </b>4 July 1997</span>
-                    </p>
-                    <p>
-                        <span><b>Phone: </b>+62 877 4888 5222</span>
-                    </p>
-                    <p>
-                        <span><b>Email: </b>hansavanessa@gmail.com</span>
-                    </p>
-                </section>
-                <section class="py-3">
-                    <h4>Social Accounts</h4>
-                    <a href="https://www.instagram.com/angelavanessaa/">Instagram</a><br>
-                    <a href="https://www.linkedin.com/in/angelavanessa/">LinkedIn</a><br>
-                    <a href="https://github.com/angelavanessaa">Github</a><br>
-                </section>
-            </aside>
-            <main class="col-8">
-                <section>
-                    <h3>ABOUT ME</h3>
-                    <hr>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sodales ante vel tempus. Vestibulum eros nisl, scelerisque a dapibus sed, rutrum a nunc. Pellentesque suscipit massa enim, sed iaculis tortor dignissim id. Maecenas vitae feugiat erat. Ut vel porttitor lacus, eu posuere massa. Cras non sem varius, viverra nunc ut, rutrum mi. Nunc a commodo velit. Suspendisse ac condimentum ligula, non finibus est. Donec nec tortor mi. Mauris sit amet tincidunt turpis. Aenean sed neque magna. Ut sit amet risus sit amet augue sollicitudin auctor at ut orci. Ut aliquet congue magna. Nulla facilisi. Praesent sagittis pretium nibh, id maximus tellus vestibulum laoreet.
-                    </p>
-                </section>
-    
-                <section>
-                    <h3>EDUCATION</h3>
-                    <hr>
-                    <article>
-                        <h5>2016</h5>
-                        <p>Ruby on Rails Full Stack Web Development Bootcamp</p>
-                        <p class="font-12">Next Academy, Kuala Lumpur, Malaysia</p>
-                        <a class="font-12" href="http://s3-ap-southeast-1.amazonaws.com/next-academy-site/uploads/certificates/angela-vanessa-e7ad7c69-2ce2-4c81-a965-69073515cdee/de70116dbd.">Certificate</a>
-                    </article>
-                    <article>
-                        <h5>2019</h5>
-                        <p>Full Stack Immersive Coding Bootcamp</p>
-                        <p class="font-12">Hacktiv8, Jakarta, Indonesia</p>
-                    </article>
-                </section>
-    
-                <section>
-                    <h3>EXPERIENCES</h3>
-                    <hr>
-                    <div class="row">
-                        <div class="col-1">
-                            <p><b>2017</b></p>
-                        </div>
-                        <div class="col-11">
-                            <p><b>GOLDEN RAMA TOUR & TRAVEL</b></p>
-                            <p class="font-12">
-                                A programmer in a team responsible for two web applications using PHP and Laravel. 
-                                A RESTful API app that fetches flight datas from another API and sends those datas to our company's e-commerce web application to allow users to make orders and continues to payment.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                
-                <section>
-                    <h3>SKILLS</h3>
-                    <hr>
-                    <div class="row">
-                        <div class="col-4">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>Mongoose</li>
-                            </ul>
-                        </div>
-                        <div class="col-4">
-                            <ul>
-                                <li>PHP</li>
-                                <li>Laravel</li>
-                                <li>PHP</li>
-                                <li>Vuex</li>
-                            </ul>
-            
-                        </div>
-                        <div class="col-4">
-                            <ul>
-                                <li>Postgres</li>
-                                <li>Mongo</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>        
-            </main>
-        </div>    
-        
+​
+<!-- HEADER -->
+<header>
+    <nav id="nav-menu">
+        <div class="toggle-menu" onclick="toggle()"></div>
+        <div class="toggle-menu" onclick="toggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="side-bar">
+            <ul>
+                <li><a href="#home"><strong>HOME</strong></a></li>
+                <li><a href="#about"><strong>ABOUT</strong></a></li>
+                <li><a href="gallery.html"><strong>GALLERY</strong></a></li>
+                <li><a href="contact.html"><strong>CONTACT</strong></a></li>
+                <li><a href="portfolio.html"><strong>PORTFOLIO</strong></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- ​
+INDEX OR HOME  -->
+
+<body onload="logo()" onpageshow="quote()">
+    <div id="home">
+        <!-- <h3>Dusty Memories</h3> -->
+        <div class="logo">
+            <!-- <h1 class="title">Dusty Memories</h1> -->
+            <h1 id="logo-effect"></h1>
+            <h2>design - photography - code</h2>
+            <p id="slogan"></p>
+        </div>
+
+        ​
+        ​
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img alt="" src='image/backlogo1.jpg' />
+                <!-- <div class="text">lorem ipsum blablabla</div> -->
+            </div>
+            <div class="mySlides fade">
+                <img alt="" src='image/flatlay5.jpg' />
+                <!-- <div class="text">lorem ipsum blablabla</div> -->
+            </div>
+            <div class="mySlides fade">
+                <img alt="" src='image/flatlay10.jpg'>
+                <!-- <div class="text">lorem ipsum blablabla</div> -->
+            </div>
+            <div class="mySlides fade">
+                <img alt="" src='image/backlogo2.jpg' />
+                <!-- <div class="text">lorem ipsum blablabla</div> -->
+            </div>
+
+
+            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+
+
+            <div style='text-align: center;'>
+                <span class="dot" onclick='currentSlide(1)'></span>
+                <span class="dot" onclick='currentSlide(2)'></span>
+                <span class="dot" onclick='currentSlide(3)'></span>
+                <span class="dot" onclick='currentSlide(4)'></span>
+            </div>
+
+        </div>
+        ​
+        <div class="tile-container">
+            <h1> Meet my gallery! </h1>
+            <div class="tile">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a href="gallery.html"><img alt="" src="image/15.jpg"></a>
+                <a href="gallery.html"><img alt="" src="image/6.jpg"></a>
+                <a href="gallery.html"><img alt="" src="image/13.jpg"></a>
+                <a href="gallery.html"><img alt="" src="image/backlogo7.jpg"></a>
+                <a href="gallery.html"><img alt="" src="image/12.jpg"></a>
+                <a href="gallery.html"><img alt="" src="image/1.jpg"></a>
+                <a href="gallery.html"><img alt="" src="image/17.jpg"></a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            ​
+        </div>
+        ​
+        ​
+
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    ​
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="profile">
+            <h2>About me</h2>
+            <img alt="" src="image/profile.jpg">
+            <h3> AFI | 22 | INA</h3>
+            <h6>Hacktiv8 Student - Infinite Fox</h6>
+            <h3> HI THERE !</h3>
+            <p> I am a Geoenthusiat girl who loved to take a picture of random moment and other things. Currently switch
+                my
+                career to your future woman delevoper!</p>
+        </div>
+    </div>
+    ​
+    <!-- </body> -->
+    ​
+    <!-- FOOTER -->
+    <footer>
+        <div class="quote">
+            <h2 class="title">Dusty Memories</h2>
+            <p class="slogan">"memories in a snap - capturing life, creating art"</p>
+        </div>
+
+        <ul class="socialmedia">
+            <li class="socmed"><a href="https://www.instagram.com/afifahrahmak" target="_blank"><img src="image/ig.png"
+                        alt=""></a></li>
+            <li class="socmed"><a href="https://www.pinterest.com/afifahrahmak" target="_blank"><img src="image/pin.png"
+                        alt=""></a></li>
+            <li class="socmed"><a href="https://www.github.com/afifahrahmak" target="_blank"><img src="image/git.png"
+                        alt=""></a></li>
+            <!-- <li class="socmed"><a href="https://www.linkedin.com/afifahrahmak" target="_blank"><img src="image/link.png" alt=""></a></li> -->
+        </ul>
+    </footer>
+    <div class="copyright">
+        <p>Aimed for educational project. <strong>copyright by Afifahrahmak </strong></p>
+    </div>
+    ​
+    ​
+    <script src="ark.js"></script>
+
 </html>
