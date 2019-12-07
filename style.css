@@ -1,0 +1,70 @@
+body {   
+    font-family: 'Lato', sans-serif
+}
+
+#head-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url('https://i.imgur.com/vytgCGx.jpg') no-repeat;
+    background-position: center -200px;
+    background-size: cover;
+}
+
+.nav-item {
+    color: #5a5858
+}
+
+
+#quotes-box {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 30rem; 
+    height: 15rem;
+    opacity: 75%;
+    transition: 0.8s;
+}
+
+#quotes-box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+.quotes {
+    font-size: 1.5rem
+}
+
+.author {
+    font-size: 1rem
+}
+
+#contact-box {
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    width: 20rem; 
+    height: 30rem;
+    opacity: 90%;
+    transition: 0.8s;
+    
+}
+
+#contact-box:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.article-content {
+    font-size: 18px;
+    line-height: 1.8em;
+    color: #515151
+}
+
+.date {
+    font-size: 0.8em;
+    color: #333
+}
