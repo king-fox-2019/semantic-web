@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Bajuku!
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="page">
+            <nav>
+                <p>
+                    <a href="#bajuku" class="title"> Bajuku! </a>
+                </p>
+                <ul>
+                        <li><a href="#order">Cara Pemesanan</a></li>
+                        <li><a href="#detail">Ukuran</a></li>
+                        <li><a href="#price">Daftar Harga</a></li>
+                </ul>
+            </nav>
+            <header id="bajuku">
+                <div>
+                    <h1>
+                        Bajuku!
+                    </h1>
+                    <p>Website untuk mencetak baju grosir</p>
+                </div>
+            </header>
+            <div class="panel">
+                <div class="panel1">
+                    <img src="./assets/lowcost.png" alt="murah">
+                    <h1>Murah</h1>
+                    <p>Kami memberikan harga termurah dari tempat lain, makin beli banyak makin murah!</p>
+                </div>
+                <div class="panel2">
+                    <img src="./assets/tees.png" alt="berkualitas">
+                    <h1>Berkualitas</h1>
+                    <p>Kami tetap memproduksi dengan kualitas yang baik, sekalipun murah!</p>
+                </div>
+                <div class="panel3">
+                        <img src="./assets/cal.png" alt="tepat">
+                        <h1>Tepat</h1>
+                        <p>Kami mengerjakannya sesuai estimasi diawal perjanjian!</p>
+                </div>
+            </div>
+            <div id="price" class="list-price">
+                <h1>
+                    Daftar Harga
+                </h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td>1 - 20</td>
+                        <td>21 - 50</td>
+                        <td>50 - 100</td>
+                        <td>Lebih dari 100</td>
+                    </tr>
+                    <tr class="table-harga">
+                        <td>IDR 150K</td>
+                        <td>IDR 120K</td>
+                        <td>IDR 100K</td>
+                        <td>IDR 80K</td>
+                        </tr>
+                </table>
+                <p>
+                    * Untuk melakukan pesanan selain kaos bisa konfirmasikan via email untuk menanyakan harga detailnya.
+                </p>
+                <p>
+                    ** Diskon khusus bagi member setia kami.
+                </p>
+            </div>
+            <div id="detail" class="size-chart">
+                <br>
+                <h1>
+                    Detail Ukuran (Tinggi * Lebar)
+                </h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td>S</td>
+                        <td>M</td>
+                        <td>L</td>
+                        <td>XL</td>
+                    </tr>
+                    <tr class="table-harga">
+                        <td>66 * 46</td>
+                        <td>69 * 49</td>
+                        <td>72 * 52</td>
+                        <td>75 * 55</td>
+                    </tr>
+                </table>
+                <p>
+                    * Untuk ukuran lebih dari XL bisa hubungi admin.
+                </p>
+                <p>
+                    ** Terdapat biaya tambahan untuk ukuran lebih dari XL dan lengan panjang.
+                </p>
+            </div>
+            <div id="order" class="order-guide">
+                <br>
+                <br>
+                <h1>
+                    Cara Pemesanan
+                </h1>
+                <hr>
+            </div>
+            <div class="order-content">
+                <div class="image">
+                    <img src="./assets/welcome.png" alt="welcome">
+                </div>
+                <div class="form-order">
+                    <form>
+                        <p>
+                            <label>Nama :</label> 
+                            <input type="text" id="name" name="nama" placeholder="Nama kamu">
+                        </p>
+                        <br>
+                        <br>
+                        <p>
+                            <label>Alamat :</label>
+                            <input type="text" name="alamat" placeholder="Alamat Kamu">
+                        </p>
+                        <br>
+                        <br>
+                        <p>
+                            <label>Nomer Telepon :</label>
+                            <input type="text" name="nomertelpon" placeholder="Nomer Telepon Kamu">
+                        </p>
+                        <br>
+                        <br>
+                        <p>
+                            <label>Pesanan :</label>
+                            <select id="type" name="pesanan">
+                                <option value="kaos">Kaos</option>
+                                <option value="kemeja">kemeja</option>
+                                <option value="jaket">Jaket/Sweeter/Hoodie</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </p>
+                        <br>
+                        <p>
+                            <label>Jumlah Pesanan :</label>
+                            <input type="number" name="jumlah" min="1" max="100000" step="1">
+                        </p>
+                        <br>
+                        <br>
+                        <p>
+                            <label>Kerangan Lanjut :</label>
+                            <textarea name="keterangan" placeholder="Keterangan lebih lanjut terkait pesanan, seperti ukuran, warna, model, dan lain - lain." rows="5" cols="35"></textarea>
+                        </p>
+                        <br>
+                        <button onclick="getResult()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="result" class="result"></div>
+        <footer class="foot">
+            <div class="f1">
+                <span>
+                    Copyright Bajuku! 2019
+                </span>
+            </div>
+            <div class="f2">
+                Bajuku! Tempat cetak kaos murah dan berkualitas
+            </div>
+            <div class="f3">
+                <img class="email" src="./assets/email.png" alt="email">
+            </div>
+            <p>
+                cs@bajuku.id
+            </p>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
